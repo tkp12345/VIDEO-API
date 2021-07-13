@@ -1,0 +1,31 @@
+.container{
+    width:50%;
+    margin-bottom: 0.3em;
+  
+}
+.video{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform 250ms ease-in;
+  
+}
+
+.video:hover{
+    transform: scale(1.02);
+}
+.thubnail{
+    width:40%;
+}
+
+.title,
+.channel{
+    margin: 0;
+    color:black;
+}
+
+.channel{
+    font-size: 0.9rem;
+    color:black;
+}
