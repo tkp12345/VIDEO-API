@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/VIDEO-API/static/css/main.a5374b6b.chunk.css",
-    "main.js": "/VIDEO-API/static/js/main.bc082f7e.chunk.js",
-    "main.js.map": "/VIDEO-API/static/js/main.bc082f7e.chunk.js.map",
-    "runtime-main.js": "/VIDEO-API/static/js/runtime-main.8b074b97.js",
-    "runtime-main.js.map": "/VIDEO-API/static/js/runtime-main.8b074b97.js.map",
-    "static/js/2.410cf4d7.chunk.js": "/VIDEO-API/static/js/2.410cf4d7.chunk.js",
-    "static/js/2.410cf4d7.chunk.js.map": "/VIDEO-API/static/js/2.410cf4d7.chunk.js.map",
-    "static/js/3.630785f2.chunk.js": "/VIDEO-API/static/js/3.630785f2.chunk.js",
-    "static/js/3.630785f2.chunk.js.map": "/VIDEO-API/static/js/3.630785f2.chunk.js.map",
+    "main.css": "/VIDEO-API/static/css/main.1e5842a3.chunk.css",
+    "main.js": "/VIDEO-API/static/js/main.8c7a8f7f.chunk.js",
+    "main.js.map": "/VIDEO-API/static/js/main.8c7a8f7f.chunk.js.map",
+    "runtime-main.js": "/VIDEO-API/static/js/runtime-main.d2a5f25d.js",
+    "runtime-main.js.map": "/VIDEO-API/static/js/runtime-main.d2a5f25d.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/VIDEO-API/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.613769bb.chunk.js": "/VIDEO-API/static/js/2.613769bb.chunk.js",
+    "static/js/2.613769bb.chunk.js.map": "/VIDEO-API/static/js/2.613769bb.chunk.js.map",
+    "static/js/3.99de3f52.chunk.js": "/VIDEO-API/static/js/3.99de3f52.chunk.js",
+    "static/js/3.99de3f52.chunk.js.map": "/VIDEO-API/static/js/3.99de3f52.chunk.js.map",
     "index.html": "/VIDEO-API/index.html",
-    "static/css/main.a5374b6b.chunk.css.map": "/VIDEO-API/static/css/main.a5374b6b.chunk.css.map",
-    "static/js/2.410cf4d7.chunk.js.LICENSE.txt": "/VIDEO-API/static/js/2.410cf4d7.chunk.js.LICENSE.txt"
+    "static/css/2.fb17aa6d.chunk.css.map": "/VIDEO-API/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.1e5842a3.chunk.css.map": "/VIDEO-API/static/css/main.1e5842a3.chunk.css.map",
+    "static/js/2.613769bb.chunk.js.LICENSE.txt": "/VIDEO-API/static/js/2.613769bb.chunk.js.LICENSE.txt",
+    "static/media/carousel-1.7e3e63e1.png": "/VIDEO-API/static/media/carousel-1.7e3e63e1.png",
+    "static/media/carousel-2.2afe2133.png": "/VIDEO-API/static/media/carousel-2.2afe2133.png",
+    "static/media/carousel-3.e7da845a.png": "/VIDEO-API/static/media/carousel-3.e7da845a.png",
+    "static/media/logo.234b2433.png": "/VIDEO-API/static/media/logo.234b2433.png",
+    "static/media/index.css": "/VIDEO-API/static/media/universe.c4e386b8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b074b97.js",
-    "static/js/2.410cf4d7.chunk.js",
-    "static/css/main.a5374b6b.chunk.css",
-    "static/js/main.bc082f7e.chunk.js"
+    "static/js/runtime-main.d2a5f25d.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.613769bb.chunk.js",
+    "static/css/main.1e5842a3.chunk.css",
+    "static/js/main.8c7a8f7f.chunk.js"
   ]
 }
