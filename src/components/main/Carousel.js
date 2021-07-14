@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-function Carousel_slider() {
+function Carousel_slider(props) {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
@@ -11,29 +11,29 @@ function Carousel_slider() {
     return (
         <Carousel activeIndex={index} onSelect={handleSelect} className="carousel">
             <Carousel.Item>
-                <img src="/img/wecoding_carousel1.png" alt="First slide" />
+                <img src={props.img} alt="First slide" />
                 <Carousel.Caption>
 
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src="/img/wecoding_carousel2.png" alt="Second slide" />
+                <img src={props.img2} alt="Second slide" />
                 <Carousel.Caption>
 
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src="/img/wecoding_carousel3.png" alt="Third slide" />
+                <img src={props.img3} alt="Third slide" />
                 <Carousel.Caption>
 
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
                 <img src="img/wecoding_carousel4.png" alt="Third slide" />
                 <Carousel.Caption>
 
                 </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
         </Carousel>
     )
 }

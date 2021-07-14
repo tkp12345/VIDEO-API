@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
 *{
   box-sizing: border-box;
 }
@@ -22,25 +23,56 @@ code {
 }
 
 header{
-  background-color: rgba(27, 27, 27, 0.753) ;
+  padding: 1rem 60px;
+  background-color: #4D4D4D ;
   padding: 1rem;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  align-items: center;
 }
 .search{
-  color:white;
-  padding: 0.5rem 1.6rem;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color:black;
+  padding: 0.5rem 4.9rem 0.5rem 1.6rem;
   border: 2px solid;
-  border-radius: 50px;
-  background-color: transparent;
-  font-size: 1.0rem;
+  border-radius: 30px;
+  background-color: #a9a9a9bf;
+    font-size: 1.0rem;
+}
+.search::placeholder{
+  font-weight: bold;
+  color:rgb(232, 232, 232)
+}
+.logo{
+  margin-left: 4vw;
 }
  
+ .logo img{
+  width: 4vw;
+  min-width: 180px;
+  max-width: 250px;
+}
  
 
 .movie-container{
+  position: relative;
   display: flex;
   flex-wrap:wrap;
+  justify-content: center;
+  z-index: 1;
+}
+.movie-container::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url("./img/universe.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.65;
 }
 
 .movie{
@@ -62,20 +94,74 @@ header{
 }
 
 .movie img:hover{
+  height: 100%;
   opacity: 0.5;
 }
 
 .movie-info{
+  letter-spacing: 1px;
+  font-family: 'Anton', sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center; 
   justify-content: space-between;
-  
   padding: 1rem;
-
 }
- 
+
+.movie-info h3{
+  text-align: center;
+  color: #ffe000;
+    /* border: solid 1px red; */
+    text-shadow: -2px 0 red, 0 3px black, 1px 0 black, 0 -1px blue;
+}
+
 movie-info h3, span{
   color : #fff;
+}
+.movie-info .review{
+  color:white;
+  margin-top:30px;
+  display: flex;
+}
+.movie-info .review .grade{
+  background: #0000007a;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 9px;
+}
+.movie-info .review .grade{
+}
+.movie-info .review .like{
+  background: #0000007a;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 9px 17px;
+}
+.movie-info .review .like button{
+  background:transparent;
+  outline: none;
+  border: 0;
+}
+.movie-info .review .like button .fa-thumbs-up{
+  background:transparent;
+  background-color:transparent;
+  color: white;
+  margin: 0 0.2em;
+}
+.movie-info .startDay{
+  margin-top: 20px;
+  letter-spacing: 0px;
+  font-size: 20px;
+  font-color: yellow;
+  color: white;
+  text-shadow: -2px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+  font-weight: bold;
+}
+.movie-info .startDay span{
+  font-weight: 200;
+    color: #f55728;
 }
 
 .movie-over{
@@ -88,11 +174,18 @@ movie-info h3, span{
   background: rgba(0,0,0,0.6);
   opacity: 0;
   transition: opacity 0.5s;
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: bold;
+  
+
 
 }
 
 .movie-over h2, p{
-  color : #fff
+  color : #fff;
+  text-shadow: -2px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+
 }
 
 .movie-over > *{
@@ -114,7 +207,7 @@ movie-info h3, span{
 }
 
 .carousel {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   width: 100%;
   height: auto;
   overflow: hidden;

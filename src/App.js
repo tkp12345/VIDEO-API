@@ -1,6 +1,9 @@
 import React ,{useEffect, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import logo from './img/logo.png'
+import img from './img/carousel-1.png'
+import img2 from './img/carousel-2.png'
+import img3 from './img/carousel-3.png'
 
 /*main Component */
 import Carousel_slider from './components/main/Carousel.js';
@@ -49,7 +52,6 @@ function App() {
 
   const handleOnsubmit = (event) =>{
   event.preventDefault()
-  console.log('검색!');
   fetch(SEARCH_API+searchTerm)
   .then(res => res.json())
   .then(data => {
@@ -65,20 +67,30 @@ function App() {
   return (
     <>
       <header>
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
+        <div className="menu">
         <form onSubmit={handleOnsubmit}>
+
         <input 
         className="search" 
         type="text" 
-        placeholder="영화 제목 입력.."
+        placeholder="영화 제목 입력..📽"
         value={searchTerm}
         onChange={handleOnChange}
         />
         </form>
+         
+        </div>
       </header>
       <div className="carousel">
-          <Carousel_slider />
+          <Carousel_slider img={img} img2={img2} img3={img3} />
         </div>
+        
       <div className="movie-container">
+       
+
       {
         movies.length > 0 && movies.map(movie => (
           <Movie key={movie.id} {...movie} />
