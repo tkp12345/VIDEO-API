@@ -1,0 +1,32 @@
+header{
+    padding: 1rem 60px;
+    background-color: #4D4D4D ;
+    padding: 1rem;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+  }
+  .search{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color:black;
+    padding: 0.5rem 4.9rem 0.5rem 1.6rem;
+    border: 2px solid;
+    border-radius: 30px;
+    background-color: #a9a9a9bf;
+      font-size: 1.0rem;
+  }
+  .search::placeholder{
+    font-weight: bold;
+    color:rgb(232, 232, 232)
+  }
+  .logo{
+    margin-left: 4vw;
+  }
+   
+   .logo img{
+    width: 4vw;
+    min-width: 180px;
+    max-width: 250px;
+  }

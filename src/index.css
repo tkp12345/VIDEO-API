@@ -22,12 +22,11 @@ code {
   flex-direction: column;
 }
 
-header{
+/* header{
   padding: 1rem 60px;
   background-color: #4D4D4D ;
   padding: 1rem;
   display: flex;
-  /* justify-content: flex-end; */
   align-items: center;
 }
 .search{
@@ -53,7 +52,7 @@ header{
   width: 4vw;
   min-width: 180px;
   max-width: 250px;
-}
+} */
  
 
 .movie-container{

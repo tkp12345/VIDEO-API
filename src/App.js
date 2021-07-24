@@ -4,7 +4,8 @@ import logo from './img/logo.png'
 import img from './img/carousel-1.png'
 import img2 from './img/carousel-2.png'
 import img3 from './img/carousel-3.png'
-
+/*header */
+import Header from './components/header/header';
 /*main Component */
 import Carousel_slider from './components/main/Carousel.js';
 
@@ -24,8 +25,23 @@ function App() {
   const[videos, setVideos] = useState([]);
   //영화 Api
   const [movies, setMovies] = useState([]);
- //검색 APi
-  const[searchTerm, setSearchTerm] = useState([]);
+
+   //검색 APi
+   const[searchTerm, setSearchTerm] = useState([]);
+ 
+  //쿼리 
+  const search = query =>{
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow',
+    };
+    fetch(
+      `GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=AIzaSyCgBtRdCQWAqIF5OXnj9tpUMqczK4d_9gk`, requestOptions
+    )
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .then(error => console.log('error',error));
+  }
 
   useEffect(()=>{
     const requestOptions = {
@@ -66,7 +82,7 @@ function App() {
  
   return (
     <>
-      <header>
+      {/* <header>
         <div className="logo">
           <img src={logo} alt="" />
         </div>
@@ -83,21 +99,18 @@ function App() {
         </form>
          
         </div>
-      </header>
+      </header> */}
+      <Header handleOnsubmit={handleOnsubmit} handleOnChange={handleOnChange} searchTerm={searchTerm} logo={logo}/>
       <div className="carousel">
           <Carousel_slider img={img} img2={img2} img3={img3} />
         </div>
-        
       <div className="movie-container">
-       
-
       {
         movies.length > 0 && movies.map(movie => (
           <Movie key={movie.id} {...movie} />
         ))
       }
       <VideoList videos={videos}/>
-      
     </div>
     </>
   )
